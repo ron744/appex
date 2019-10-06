@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="382.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Scene1Controller">
+   <children>
+      <Button fx:id="myButton" layoutX="31.0" layoutY="222.0" mnemonicParsing="false" text="New Notice" />
+      <TableView fx:id="myTable" layoutX="31.0" layoutY="10.0" prefHeight="195.0" prefWidth="391.0">
+        <columns>
+            <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="98.0" text="Date" />
+          <TableColumn fx:id="noticeColumn" prefWidth="292.0" text="Notice" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
